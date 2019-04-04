@@ -1,0 +1,9 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "devtube"
+theme = "bootstrap-bp-hugo-theme"
+googleAnalytics = "UA-137759373-1"
+[Params]
+   showPostSummary = true
+   startPageColumns = true
+   hideReadingTime = true

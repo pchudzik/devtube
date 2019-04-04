@@ -1,0 +1,21 @@
+language: go
+
+services:
+  - docker
+
+install:
+  - "(cd themes && git clone https://github.com/pchudzik/bootstrap-bp-hugo-theme.git)"
+  - "./build-docker.sh"
+
+script:
+  - "./build-site.sh"
+
+deploy:
+  provider: s3
+  access_key_id: "$S3_ACCESS_KEY"
+  secret_access_key: "$S3_SECRET_KEY"
+  bucket: "devtube.tv"
+  local_dir: dist
+  region: eu-central-1
+  on:
+    branch: master

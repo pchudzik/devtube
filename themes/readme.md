@@ -1,0 +1,1 @@
+run git clone git@github.com:pchudzik/bootstrap-bp-hugo-theme.git to get the template
