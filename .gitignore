@@ -1,3 +1,5 @@
 themes/bootstrap-bp-hugo-theme
 dist
 .idea
+.DS_Store
+resources/_gen/
